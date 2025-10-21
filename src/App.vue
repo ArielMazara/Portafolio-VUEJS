@@ -4,6 +4,8 @@ import DatosPersonales from './components/DatosPersonales.vue';
 import Educacion from './components/EducacionComponente.vue';
 import ExperienciaComponente from './components/ExperienciaComponente.vue';
 import ProyectosComponente from './components/ProyectosComponente.vue';
+import HabilidadesAriel from './components/HabilidadesAriel.vue';
+import InteresesComponente from './components/InteresesComponente.vue';
 
   </script>
 
@@ -26,10 +28,17 @@ import ProyectosComponente from './components/ProyectosComponente.vue';
       <section id="proyectos"><h2>Proyectos</h2></section>
       <ProyectosComponente/>
 
-
       <section id="habilidades"><h2>Habilidades</h2></section>
+      <HabilidadesAriel/>
+      
       <section id="intereses"><h2>Intereses</h2></section>
+      <InteresesComponente/>
+      
   </main>
+  <footer>
+      <a href="#top">Inicio</a>
+      <p>© 2025 Juan Ariel Mazara - Portafolio WEB - Tutorial UTN FRSR</p>
+  </footer>
 
 </template>
 
@@ -46,5 +55,16 @@ section h2 {
   color: #333333; /* <-- ESTE ES EL COLOR OSCURO */
   font-weight: 600; /* Hacemos la letra un poco más gruesa (opcional) */
 }
+/* AQUÍ AGREGAMOS LOS ESTILOS DEL FOOTER
+  (Los movimos para que estén dentro del <style scoped>)
+*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.3rem;
+}
 </style>
+
 
